@@ -1,8 +1,4 @@
-import { myApproach as angys } from './approaches/myApproach';
-// import { myApproach as franciscos } from './approaches/franciscos';
-// import { myApproach as pipos } from './approaches/pipo';
-// import { myApproach as isaacs } from './approaches/isaac';
-// import { myApproach as jorges } from './approaches/jorge';
+import { naiveApproach as naive } from './approaches/naiveApproach';
 
 var aproacheses: { 
 	[key: string]: { 
@@ -12,8 +8,8 @@ var aproacheses: {
 	}
 } = {
 
-	'Angy': {
-		fn: angys
+	'naive': {
+		fn: naive
 	}
 
 };
@@ -23,26 +19,15 @@ var aproacheses: {
 var testIO = {
 
 	whiteboard: {
-		input: [0, 1, 1, 0, 2, 2, 2, 2, 2, 2, 1 ],
-		result: 2,
-		iterations: 1000000
-	},
-
-	ivanJaberInput: {
-		input: [4,4,4,1,1,1],
-		result: false,
-		iterations: 1000000
-	},
-	ivanJaberInput2: {
-		input: [1,1,2,2,3,3,3],
-		result: false,
+		input: 7,
+		result: 11,
 		iterations: 1000000
 	}
 }
 
 var start, end, result, times = [];
 
-var testCase = testIO.ivanJaberInput2;
+var testCase = testIO.whiteboard;
 
 for(var aproach in aproacheses) {
 
