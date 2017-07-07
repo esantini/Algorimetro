@@ -1,8 +1,8 @@
 import { myApproach as angys } from './approaches/myApproach';
-import { myApproach as franciscos } from './approaches/franciscos';
-import { myApproach as pipos } from './approaches/pipo';
-import { myApproach as isaacs } from './approaches/isaac';
-import { myApproach as jorges } from './approaches/jorge';
+// import { myApproach as franciscos } from './approaches/franciscos';
+// import { myApproach as pipos } from './approaches/pipo';
+// import { myApproach as isaacs } from './approaches/isaac';
+// import { myApproach as jorges } from './approaches/jorge';
 
 var aproacheses: { 
 	[key: string]: { 
@@ -14,20 +14,7 @@ var aproacheses: {
 
 	'Angy': {
 		fn: angys
-	},
-	'Francisco': {
-		fn: franciscos
-	},
-	'Pipo': {
-		fn: pipos
-	},
-	'Isaac': {
-		fn: isaacs
-	},
-	'Jorge': {
-		fn: jorges
 	}
-
 
 };
 
